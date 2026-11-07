@@ -115,4 +115,9 @@ public class GlobalExceptionHandler {
         String message = errors.get(0).getDefaultMessage();
         return message == null ? ErrorCode.PARAMS_ERROR.getMessage() : message;
     }
+//    @ExceptionHandler(HttpMessageNotReadableException.class)
+//    public BaseResponse<?> handleHttpMessageNotReadable(HttpMessageNotReadableException e) {
+//        log.error("请求体解析失败: {}", e.getMessage());
+//        return ResultUtils.error(ErrorCode.INVALID_PARAMETER_ERROR, "请求体格式错误或为空");
+//    }
 }

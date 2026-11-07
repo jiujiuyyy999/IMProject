@@ -30,4 +30,10 @@ public class UserConstant {
     public static final TimeUnit ACCESS_TOKEN_UNIT = TimeUnit.MINUTES; // 分钟
 
     public static final TimeUnit REFRESH_TOKEN_UNIT = TimeUnit.DAYS; // 天
+    //正则规则
+    public static final String EMAIL_REGEX =
+            "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}$";
+    public static final String PHONE_REGEX = "^1[3-9]\\d{9}$";
+
+    public static final Integer USER_TIME = 3;
 }
